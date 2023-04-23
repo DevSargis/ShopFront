@@ -1,22 +1,20 @@
 import CheckIcon from "@mui/icons-material/Check";
-import { Box, FormControl, InputLabel, MenuItem } from "@mui/material";
+import { Box } from "@mui/material";
 import Select from "@mui/material/Select";
 import Typography from "@mui/material/Typography";
 import React from "react";
+import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 
-export const Header = () => {
-  const [age, setAge] = React.useState("");
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
+export const Header = (props) => {
+
   return (
     <>
-      <Box sx={{ backgroundColor: "#272343" }}>
+      <Box sx={{ backgroundColor: "#272343", display:"flex" }}>
         <Box
           sx={{
             display: "flex",
             position: "relative",
-            left: "150px",
+            left: "300px",
           }}
         >
           <CheckIcon
@@ -31,18 +29,26 @@ export const Header = () => {
             Free Shipping On All Orders Over 50$
           </Typography>
         </Box>
+        <Box sx={{
+          display: "flex",
+          position: "relative",
+          left: "1098px",
+        }}>
+          <Typography style={{ color: "#BEBDC7", fontSize: "15px"}}>
+            Faqs
+          </Typography>
+          <Box  sx={{
+          display: "flex",
+          position: "relative",
+          left: "24px"}}>
+            <ErrorOutlineIcon sx={{ width: "16px", height: "16px", paddingLeft: "10px", color: "#FFFFFF", paddingTop:"3.5px" }} />
+            <Typography style={{ color: "#BEBDC7", fontSize: "15px", paddingLeft: "6px"}} >
+              Need Help
+            </Typography>
+          </Box>
+        </Box>
       </Box>
-      <Select
-        labelId="demo-simple-select-label"
-        id="demo-simple-select"
-        value={age}
-        label="Age"
-        onChange={handleChange}
-      >
-        <MenuItem value={10}>Ten</MenuItem>
-        <MenuItem value={20}>Twenty</MenuItem>
-        <MenuItem value={30}>Thirty</MenuItem>
-      </Select>
+
     </>
   );
 };
