@@ -14,8 +14,6 @@ export const HeaderMiddle = () => {
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
-            padding: "20px 200px",
-            gap: "150px"
         }}>
             <Box sx={{
                 display: "flex",
@@ -23,31 +21,21 @@ export const HeaderMiddle = () => {
                 alignItems: "center",
                 padding: "0px",
                 gap: "8px",
-                width: "166px",
-                height: "40px",
-                flex: "none",
-                order: "0",
-                flexGrow: "0"
             }}>
-            <Box component="img" src={logo} />
-            <Typography sx={{
-                width: "118px",
-                height: "31px",
-                fontFamily: "Inter",
-                fontStyle: "normal",
-                fontWeight: "500",
-                fontSize: "26px",
-                lineHeight: "120%",
-                color: "#272343",
-                flex: "none",
-                order: 1,
-                flexGrow: 0
-            }}>Comforty</Typography>
+                <Box component="img" src={logo} />
+                <Typography sx={{
+                    width: "118px",
+                    height: "31px",
+                    fontFamily: "Inter",
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    fontSize: "26px",
+                    lineHeight: "120%",
+                    color: "#272343",
+                }}>Comforty</Typography>
             </Box>
             <SearchComponent />
             <UserLinks />
         </Box>
-
     )
-
 };
