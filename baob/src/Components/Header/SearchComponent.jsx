@@ -9,7 +9,6 @@ export const SearchComponent = () => (
         <TextField
             variant="standard"
             placeholder="Search here..."
-            size="small"
             sx={{
                 position: "relative",
                 width: "413px",
@@ -17,9 +16,6 @@ export const SearchComponent = () => (
                 top: "5px",
                 background: "#FFFFFF",
                 borderRadius: "5px",
-                flex: "none",
-                order: 1,
-                flexGrow: 0
             }}
             InputProps={{
                 endAdornment: (
@@ -30,7 +26,4 @@ export const SearchComponent = () => (
             }}
         />
     </Box>
-
-
-
 );
