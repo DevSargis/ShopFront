@@ -18,10 +18,11 @@ import MuiAppBar from '@mui/material/AppBar';
 import List from '@mui/material/List';
 import MailIcon from '@mui/icons-material/Mail';
 import { MenuItem } from '@mui/material';
+import { Link, useLocation  } from 'react-router-dom';
 
 const drawerWidth = 212;
 
-const pages = ["Home", "Shop", "Product", "About"];
+const pages = ["Home", , "Shop", "Product", "About"];
 
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -42,6 +43,8 @@ export default function Lists() {
     const handleDrawerClose = () => {
         setOpen(false);
     };
+    const location = useLocation();
+
 
     return (
         <Box >
@@ -50,26 +53,28 @@ export default function Lists() {
                 flexDirection: "row",
                 alignItems: "center",
                 background: "white",
-                color:"#636270",
+                color: "#636270",
             }}>
                 <Toolbar onClick={handleDrawerOpen}
                     sx={{ mr: 2, ...(open) }}>
                     <IconButton
-                        sx={{color: "#272343"}}
+                        sx={{ color: "#272343" }}
                         aria-label="open drawer"
                     >
                         <MenuIcon />
                     </IconButton>
-                    <MenuItem sx={{color: "#272343"}}>
+                    <MenuItem sx={{ color: "#272343" }}>
                         All Categories
                     </MenuItem>
                 </Toolbar>
                 <Toolbar sx={{ display: "flex" }}>
-                {pages.map((page) => (
-                <MenuItem key={page}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+                    {pages.map((page) => (
+                        <Link key={page} to={"/"+ page.toLowerCase()} style={{ textDecoration: "none", color: "#272343" }}>
+                            <MenuItem key={page} selected={location.pathname === '/' + page.toLowerCase()}>
+                                <Typography textAlign="center" sx={{ color: location.pathname === '/' + page.toLowerCase() ? '#007580' : '#272343' }}>{page}</Typography>
+                            </MenuItem>
+                        </Link>
+                    ))}
                 </Toolbar>
             </MuiAppBar>
 
@@ -106,12 +111,6 @@ export default function Lists() {
                     ))}
                 </List>
             </Drawer>
-
-
-
-
-
-
         </Box>
     );
 }
