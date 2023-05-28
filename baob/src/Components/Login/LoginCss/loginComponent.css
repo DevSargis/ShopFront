@@ -1,0 +1,76 @@
+.generalLogin{
+    margin: 2% 30%;
+    width: 648px;
+    height: 382px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
+    border-radius: 12px;
+
+}
+.signInTextLogin{
+    position: relative;
+    top: 32px;
+    left: 272px;
+    width: 105px;
+    height: 35px;
+    font-family: 'Inter' !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    line-height: 110%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #272343;
+}
+.inpLogin{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    left: 10%;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+    
+}
+.inpPasswordLogin{
+    background: #F0F2F3 !important;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
+    position: relative !important;
+    height: 50px !important;
+    background: #F0F2F3 !important;
+    opacity: 0.7 !important;
+    border-radius: 8px !important;
+    padding: 0% 0% !important;
+    width: 500px !important;
+    padding-left: 3% !important;
+}
+
+.forgetLogin{
+    position: relative;
+    left: 46%;
+    font-size: 14px;
+    color: #007580 !important;
+}
+
+.optionLogin{
+padding: 1% 10%;
+color: #636270 !important;
+}
+
+.signUpLogin{
+    display: flex !important; 
+    justify-content: center;
+    gap: 4px ;
+    padding-top: 1%;
+}
+
+.signBtnLogin{
+    position: relative;
+    width: 78%;
+    background-color: #029FAE !important;
+    border-radius: 8px;
+    left: 10%;
+    color: white !important;
+}

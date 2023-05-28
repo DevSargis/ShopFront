@@ -8,11 +8,11 @@ import CarouselComponent from "../Home/Carousel/Carousel";
 export const Header = ({props}) => {
   return (
     <>
-      <Box sx={{padding:"0% 9%"}}>
+      <Box>
         <HeaderMiddle />
         <Links />
         {console.log(props.isHome)}
-        {props.isHome ? <CarouselComponent /> : <div> Aro</div>}
+        {props.isHome ? <CarouselComponent /> : <div></div>}
       </Box>
     </>
   );

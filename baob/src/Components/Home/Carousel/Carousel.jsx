@@ -13,7 +13,6 @@ export default function CarouselComponent() {
             borderRadius: "50%",
             border: "1px solid white",
             backgroundColor: "transparent",
-            borderRadius: "50%",
             "&:hover": {
                 backgroundColor: "lightgray",
               },

@@ -1,0 +1,49 @@
+.generalRegister{
+    margin: 2% 30%;
+    height: 650px;
+    width: 648px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgba(39, 35, 67, 0.12);
+    border-radius: 12px;
+
+}
+.signInTextRegister{
+    position: relative;
+    top: 32px;
+    left: 272px;
+    width: 105px;
+    height: 35px;
+    font-family: 'Inter' !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 30px !important;
+    line-height: 110%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #272343;
+}
+.inpRegister{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    left: 10%;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;   
+    
+}
+
+.inpPasswordRegister{
+    background: #F0F2F3 !important;
+}
+.signBtnRegister{
+    position: relative;
+    width: 78%;
+    height: 10%;
+    background-color: #029FAE !important;
+    border-radius: 8px;
+    left: 10%;
+    top: 46%;
+    color: white !important;
+}
