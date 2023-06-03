@@ -3,36 +3,14 @@ import logo from "../../Images/Logo.svg"
 import Typography from "@mui/material/Typography";
 import { SearchComponent } from "./SearchComponent";
 import { UserLinks } from "./UserLinks";
-
+import "./HeaderCss/HeaderCss.css"
 
 export const HeaderMiddle = () => {
     return (
-        <Box sx={{
-            height: "84px",
-            background: "#F0F2F3",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-        }}>
-            <Box sx={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                padding: "0px",
-                gap: "8px",
-            }}>
+        <Box className = "headerMiddleGeneral">
+            <Box className="headerMiddleImageBox">
                 <Box component="img" src={logo} />
-                <Typography sx={{
-                    width: "118px",
-                    height: "31px",
-                    fontFamily: "Inter",
-                    fontStyle: "normal",
-                    fontWeight: "500",
-                    fontSize: "26px",
-                    lineHeight: "120%",
-                    color: "#272343",
-                }}>Comforty</Typography>
+                <Typography className="headerMiddleTitle">Comforty</Typography>
             </Box>
             <SearchComponent />
             <UserLinks />

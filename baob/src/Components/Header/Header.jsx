@@ -11,7 +11,6 @@ export const Header = ({props}) => {
       <Box>
         <HeaderMiddle />
         <Links />
-        {console.log(props.isHome)}
         {props.isHome ? <CarouselComponent /> : <div></div>}
       </Box>
     </>

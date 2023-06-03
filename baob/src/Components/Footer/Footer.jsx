@@ -3,12 +3,12 @@ import { SocialLinks } from "./SocialLinks";
 import  Category  from "./Category";
 import Support from "./Support";
 import Newsletter from "./Newsletter";
-
+import "./FooterCss/FooterCss.css"
 
 export const Footer = () => {
     return (
         <>
-            <Box sx={{display:"flex", gap:"16%", padding: "0% 0%" }}>
+            <Box className = "generalFooter">
                 <SocialLinks />
                 <Category />
                 <Support/>

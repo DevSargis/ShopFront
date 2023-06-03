@@ -19,10 +19,10 @@ import List from '@mui/material/List';
 import MailIcon from '@mui/icons-material/Mail';
 import { MenuItem } from '@mui/material';
 import { Link, useLocation  } from 'react-router-dom';
+import "./HeaderCss/HeaderCss.css";
 
-const drawerWidth = 212;
 
-const pages = ["Home", , "Shop", "Product", "About"];
+const pages = ["Home",  "Shop", "Product", "About"];
 
 const DrawerHeader = styled('div')(({ theme }) => ({
     display: 'flex',
@@ -48,13 +48,7 @@ export default function Lists() {
 
     return (
         <Box >
-            <MuiAppBar position="static" sx={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                background: "white",
-                color: "#636270",
-            }}>
+            <MuiAppBar position="static" className='headerLinksMuiAppBar'>
                 <Toolbar onClick={handleDrawerOpen}
                     sx={{ mr: 2, ...(open) }}>
                     <IconButton
@@ -79,15 +73,7 @@ export default function Lists() {
             </MuiAppBar>
 
             <Drawer
-                sx={{
-                    width: drawerWidth,
-                    flexShrink: 0,
-                    '& .MuiDrawer-paper': {
-                        width: drawerWidth,
-                        boxSizing: 'border-box',
-                        top: "92px"
-                    },
-                }}
+                className='headerLinksMuiAppBarDrawer'
                 variant="persistent"
                 anchor="left"
                 open={open}

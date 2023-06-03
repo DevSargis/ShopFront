@@ -1,0 +1,26 @@
+.carouselNavButtonsProps {
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+  }
+  
+.carouselnavButtonsProps:hover {
+background-color: lightgray;
+}
+
+.carouselIndicatorContainerProps{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 10px;
+}
+
+.carouselindicatorIconButtonProps{
+    z-index: 1;
+    color: white;
+    margin: 0 5px;
+}

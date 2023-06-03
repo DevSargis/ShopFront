@@ -6,7 +6,6 @@ import { useState } from "react";
 import { Button } from "@material-ui/core";
 import {request, setAuthHeader} from "../../Helpers/fetch_helper.js"
 
-
 export const RegisterComponent = () => {
     const [isVisible, setVisible] = useState(false);
     const setIsVisible = () => {

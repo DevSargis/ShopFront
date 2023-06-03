@@ -1,9 +1,9 @@
-import MainComponents from './Components/Main/MainComponents';
+import RootContainer from "./Components/Background/RootContainer";
 
 function App() {
   return (
     <>
-      <MainComponents></MainComponents>
+     <RootContainer/>
     </>
   );
 }
