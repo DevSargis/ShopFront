@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import logo from "../../Images/Logo.svg"
+import logo from "../../Images/Logo.jpg"
 import Typography from "@mui/material/Typography";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import TwitterIcon from '@mui/icons-material/Twitter';
