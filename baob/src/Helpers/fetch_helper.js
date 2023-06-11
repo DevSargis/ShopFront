@@ -23,16 +23,15 @@ export const setAuthHeader = (token) => {
       body: data ? JSON.stringify(data) : undefined
     };  
     return await fetch(baseURL + url, requestOptions)
-      .then(response =>{
-         response.json()
-        })
-      .catch(error=>{
-        console.log("asdasdsadasdasdasd")
-      })
-      .then(data => {
-        return data;
-      })
-      .catch(error => {
-        throw error;
-      });
+    .then(response => {
+      if (!response.ok) {
+        return response.json().then(data => {
+          throw new Error(`${data.message} ${response.status}`);
+        });
+      }
+      return response.json();
+    })
+    .catch(error => {
+      throw error;
+    });
   };
